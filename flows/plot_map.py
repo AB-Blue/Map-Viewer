@@ -19,7 +19,7 @@ def run():
     
     map_header = text_input(
         "map_header",
-        value="0,1,2,3",
+        value="0,3,4,5",
         label="Skip lines, X column, Y column, Z column"
     )
 
