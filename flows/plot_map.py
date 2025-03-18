@@ -5,24 +5,12 @@ from onecode import Project, file_input, text_input, file_output, Mode
 
 def run():
 
-    # Force OneCode to EXECUTE mode (ignore param file)
-    # Project().mode = Mode.EXECUTE
-    # Clear any leftover data from /data/params.json
-    Project().data['map_file'] = ""
-
     map_file = file_input(
         "map_file",
         value="",  # Start blank
         label="Path to Map File"
     )
-
-    print('AB', map_file)
   
-    # Check if the user selected a file
-    if not map_file:
-        Logger.error("[map_file] No file was provided!")
-        return
-
     # Validate the file actually exists
     if not os.path.exists(map_file):
         raise FileNotFoundError(f"[map_file] File not found: {map_file}")
