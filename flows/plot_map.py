@@ -6,7 +6,7 @@ from onecode import Project, file_input, text_input, file_output, Mode
 def run():
 
     # Force OneCode to EXECUTE mode (ignore param file)
-    Project().mode = Mode.EXECUTE
+    # Project().mode = Mode.EXECUTE
     # Clear any leftover data from /data/params.json
     Project().data['map_file'] = ""
 
