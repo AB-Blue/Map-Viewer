@@ -1,7 +1,7 @@
 import onecode
 import os
 from .geological_mapping import plot_2d_map
-from onecode import Project, file_input, text_input, file_output, Mode
+from onecode import Project, file_input, text_input, file_output, Mode, Logger
 
 def run():
 
