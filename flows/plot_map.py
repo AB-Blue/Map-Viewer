@@ -23,9 +23,11 @@ def run():
         label="Skip lines, X column, Y column, Z column"
     )
 
-    grid_points = text_input(
+    grid_points = number_input(
         "grid_points",
         value="100",
+        min=1,
+        step=1,
         label="Number of Grid Points"
     )
     
