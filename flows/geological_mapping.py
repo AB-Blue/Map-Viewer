@@ -52,7 +52,8 @@ def plot_2d_map(map_path, map_header_info, point_no=100, output_path="output_map
     plt.ylabel("Y")
     plt.title(f"Elevation Contour Map\nMap Name: {map_name}")
     plt.grid(True)
-
+    plt.show()
+    
     # Save the output
     plt.savefig(output_path)
     plt.close()
