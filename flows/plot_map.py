@@ -1,9 +1,18 @@
 import onecode
 import os
 from .geological_mapping import plot_2d_map
+from .geological_mapping_3d import plot_3d_map
 from onecode import Project, file_input, text_input, file_output, Mode, Logger
 
 def run():
+
+    # Dropdown to select map display mode
+    display_mode = dropdown(
+        "display_mode",
+        options=["2D", "3D"],
+        value="2D",  # Default value
+        label="Select Map Display Mode"
+    )
 
     map_file = file_input(
         "map_file",
@@ -42,6 +51,15 @@ def run():
         onecode.Logger.error("Invalid input for grid points. Please enter a valid integer.")
         return
 
+    # Call the appropriate function based on display mode
+    if display_mode == "2D":
+        result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
+    elif display_mode == "3D":
+        result = plot_3d_map(map_file, map_header, output_path=output_file)
+    else:
+        Logger.error(f"Unsupported display mode: {display_mode}")
+        return
+
     # Call the function to generate the plot
-    result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
-    onecode.Logger.info(f"Map generated and saved to: {result}")
+    # result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
+    # onecode.Logger.info(f"Map generated and saved to: {result}")
