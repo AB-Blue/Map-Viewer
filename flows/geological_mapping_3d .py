@@ -1,3 +1,5 @@
+import pyvista as pv
+
 # method to plot map in a 3D view
 def plot_3d_map(map_path, map_header_info):
 
