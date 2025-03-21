@@ -3,5 +3,5 @@ numpy
 matplotlib
 scipy
 pyvista 
-trame==3.0.0 
-trame-vtk==3.0.0
+trame==2.8.15
+trame-vtk==2.8.15
