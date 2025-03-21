@@ -13,10 +13,10 @@ def plot_3d_map(map_path, map_header_info, output_path):
     z_col = map_header[3]-1
 
     # Read data from the text file
-    self.map = np.loadtxt(map_path, skiprows = skip_row, usecols=[x_col, y_col, z_col],dtype=(float))
-    X = self.map[:, 0] 
-    Y = self.map[:, 1]  
-    Z = self.map[:, 2]
+    data = np.loadtxt(map_path, skiprows = skip_row, usecols=[x_col, y_col, z_col],dtype=(float))
+    X = data[:, 0] 
+    Y = data[:, 1]  
+    Z = data[:, 2]
 
     # For consistency the elevation is plotted with (-) sign
     if statistics.mean(Z) > 0:
