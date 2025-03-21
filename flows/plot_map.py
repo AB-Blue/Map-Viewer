@@ -8,7 +8,7 @@ def run():
 
     # Dropdown to select map display mode
     display_mode = dropdown(
-        key="visualization_mode",
+        key="display_mode",
         options=["2D", "3D"],
         value="2D",  # Default value
         label="Select Map Display Mode"
@@ -39,11 +39,10 @@ def run():
     )
     
     # File output to save the generated map
-    print('ab', f"mode{visualization_mode}")
     output_file = file_output("output_map", "output_map.png" if display_mode == "2D" else "output_map.html")
 
     # Log the input parameters
-    Logger.info(f"Map File: {map_file}, Header: {map_header}, Grid Points: {grid_points}, Visualization Mode: {visualization_mode}")
+    Logger.info(f"Map File: {map_file}, Header: {map_header}, Grid Points: {grid_points}, Visualization Mode: {display_mode}")
 
     
     # Convert grid_points from text to int
