@@ -39,6 +39,7 @@ def run():
     )
     
     # File output to save the generated map
+    print('ab', f"mode{visualization_mode}")
     output_file = file_output("output_map", "output_map.png" if visualization_mode == "2D" else "output_map.html")
 
     # Log the input parameters
