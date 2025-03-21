@@ -9,7 +9,7 @@ def run():
     # Dropdown to select map display mode
     display_mode = dropdown(
         "visualization_mode",
-        options=["2D", "3D"],
+        values=["2D", "3D"],
         value="2D",  # Default value
         label="Select Map Display Mode"
     )
@@ -38,12 +38,13 @@ def run():
         label="Number of Grid Points"
     )
     
-    # File output to save generated map image
-    output_file = file_output("output_map", "output_map.png")
+    # File output to save the generated map
+    output_file = file_output("output_map", "output_map.png" if visualization_mode == "2D" else "output_map.html")
 
     # Log the input parameters
-    onecode.Logger.info(f"Map File: {map_file}, Header: {map_header}, Grid Points: {grid_points}")
+    Logger.info(f"Map File: {map_file}, Header: {map_header}, Grid Points: {grid_points}, Visualization Mode: {visualization_mode}")
 
+    
     # Convert grid_points from text to int
     try:
         point_no = int(grid_points)
@@ -59,7 +60,8 @@ def run():
     else:
         Logger.error(f"Unsupported display mode: {display_mode}")
         return
-
+    Logger.info(f"Map generated and saved to: {result}")
+    
     # Call the function to generate the plot
     # result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
     # onecode.Logger.info(f"Map generated and saved to: {result}")
