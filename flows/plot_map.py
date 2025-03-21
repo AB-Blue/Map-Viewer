@@ -9,7 +9,7 @@ def run():
     # Dropdown to select map display mode
     display_mode = dropdown(
         "visualization_mode",
-        values=["2D", "3D"],
+        options=["2D", "3D"],
         value="2D",  # Default value
         label="Select Map Display Mode"
     )
