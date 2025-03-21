@@ -1,3 +1,5 @@
+import numpy as np
+import statistics
 import pyvista as pv
 
 # method to plot map in a 3D view
