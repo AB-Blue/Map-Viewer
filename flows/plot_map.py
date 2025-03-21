@@ -49,19 +49,17 @@ def run():
     try:
         point_no = int(grid_points)
     except ValueError:
-        onecode.Logger.error("Invalid input for grid points. Please enter a valid integer.")
+        Logger.error("Invalid input for grid points. Please enter a valid integer.")
         return
 
     # Call the appropriate function based on display mode
-    if display_mode == "2D":
-        result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
-    elif display_mode == "3D":
-        result = plot_3d_map(map_file, map_header, output_path=output_file)
-    else:
-        Logger.error(f"Unsupported display mode: {display_mode}")
+    try:
+        if display_mode == "2D":
+            result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
+        elif display_mode == "3D":
+            result = plot_3d_map(map_file, map_header, output_path=output_file)
+        Logger.info(f"Map generated and saved to: {result}")
+        
+    except ValueError:
+        Logger.error("Invalid map_header_info format. Please check 'skip_row,x_col,y_col,z_col' values again.")
         return
-    Logger.info(f"Map generated and saved to: {result}")
-    
-    # Call the function to generate the plot
-    # result = plot_2d_map(map_file, map_header, point_no=point_no, output_path=output_file)
-    # onecode.Logger.info(f"Map generated and saved to: {result}")
