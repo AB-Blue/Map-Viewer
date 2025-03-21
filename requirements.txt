@@ -2,6 +2,6 @@ onecode>=1,<2
 numpy
 matplotlib
 scipy
-pyvista
-trame
+trame[full]
 trame-vtk
+pyvista
