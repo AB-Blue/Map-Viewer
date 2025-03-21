@@ -2,6 +2,5 @@ onecode>=1,<2
 numpy
 matplotlib
 scipy
-pyvista>=0.44
-trame>=3.0
-trame-vtk>=3.0
+pyvista
+trame
