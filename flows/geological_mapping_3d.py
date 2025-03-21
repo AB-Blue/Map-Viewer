@@ -1,7 +1,7 @@
 import pyvista as pv
 
 # method to plot map in a 3D view
-def plot_3d_map(map_path, map_header_info):
+def plot_3d_map(map_path, map_header_info, output_path):
 
     # Get parameters from map header info
     map_header = list(np.array(map_header_info.split(',')).astype(int))
@@ -31,3 +31,9 @@ def plot_3d_map(map_path, map_header_info):
     plotter.show_axes()
     plotter.show_bounds()
     plotter.show(interactive=True)
+    
+    # Export the plot to an HTML file
+    plotter.export_html(output_path)
+    plotter.close()
+
+    return output_path
