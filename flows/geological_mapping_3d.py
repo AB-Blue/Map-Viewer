@@ -29,14 +29,18 @@ def plot_3d_map(map_path, map_header_info, output_path):
     # Create a colormap
     colormap = 'jet'  
     # geological_grid_scaled = geological_grid.scale([1,1,1])
+
     plotter = pv.Plotter()
-    plotter.add_mesh(geological_grid, scalars = Z, cmap = colormap, show_scalar_bar = True, style = 'points')
+    plotter.add_mesh(geological_grid, scalars=Z, cmap=colormap, show_scalar_bar=True, style='points')
     plotter.show_axes()
     plotter.show_bounds()
-    plotter.show(interactive=True)
     
-    # Export the plot to an HTML file
+    # Show without destroying the window
+    plotter.show(auto_close=False)
+    
+    # Now export to HTML
     plotter.export_html(output_path)
     plotter.close()
+
 
     return output_path
