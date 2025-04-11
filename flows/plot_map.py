@@ -14,10 +14,11 @@ def run():
         label="Select Map Display Mode"
     )
 
+    # select map file 
     map_file = file_input(
         "map_file",
         value="",  # Start blank
-        label="Path to Map File"
+        label="Path to Map File (.txt, .dat ,.xyz , etc.)"
     )
   
     # Validate the file actually exists
@@ -25,13 +26,15 @@ def run():
         raise FileNotFoundError(f"[map_file] File not found: {map_file}")
 
     Logger.info(f"Using map file: {map_file}")
-    
+
+    # Define map header
     map_header = text_input(
         "map_header",
         value="0,3,4,5",
-        label="Skip lines, X column, Y column, Z column"
+        label="Specify Skip Lines, X, Y, and Z Columns (comma-separated)"
     )
 
+    # Grid points
     grid_points = text_input(
         "grid_points",
         value="100",
