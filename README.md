@@ -10,7 +10,7 @@ Share your email address to access the Map Application.
 Send an email with title "Mapping Application" to a.babasafari@yahoo.com
 
 The Map Application interface can be accessed via the link below.
-https://www.onecode.rocks/app
+https://www.onecode.rocks/apps
 
 Select either 2D or 3D display mode.
 
