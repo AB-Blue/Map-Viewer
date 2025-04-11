@@ -1,6 +1,6 @@
 # Mapping Application
 
-## Map Visualization in 2D and 3D view
+## Map visualization in 2D and 3D view
 ### This application is available on the OneCode platform
 
 Please follow the instructions of provided link to create your Onecode account.
@@ -32,6 +32,7 @@ In 2D mode, select the PNG file; in 3D mode, select the HTML file to view and do
 
 Visit LinkedIn and YouTube pages using the provided links for more details.
 TBD
+Thank you
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ### To run as a standalone script:
