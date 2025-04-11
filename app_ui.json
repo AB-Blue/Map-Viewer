@@ -1,0 +1,70 @@
+[
+    {
+        "id": "plot_map",
+        "label": "plot_map",
+        "items": {
+            "display_mode": {
+                "key": "display_mode",
+                "kind": "Dropdown",
+                "label": "Select Map Display Mode",
+                "value": "2D",
+                "count": null,
+                "optional": false,
+                "disabled": false,
+                "options": [
+                    "2D",
+                    "3D"
+                ],
+                "multiple": false,
+                "metadata": false,
+                "depends_on": [],
+                "dependencies": []
+            },
+            "map_file": {
+                "key": "map_file",
+                "kind": "FileInput",
+                "label": "Path to Map File (.txt, .dat ,.xyz , etc.)",
+                "value": "",
+                "count": null,
+                "optional": false,
+                "disabled": false,
+                "types": null,
+                "multiple": false,
+                "tags": null,
+                "metadata": false,
+                "depends_on": [],
+                "dependencies": []
+            },
+            "map_header": {
+                "key": "map_header",
+                "kind": "TextInput",
+                "label": "Specify Skip Lines, X, Y, and Z Columns (comma-separated)",
+                "value": "0,3,4,5",
+                "count": null,
+                "optional": false,
+                "disabled": false,
+                "max_chars": null,
+                "placeholder": null,
+                "multiline": false,
+                "metadata": false,
+                "depends_on": [],
+                "dependencies": []
+            },
+            "grid_points": {
+                "key": "grid_points",
+                "kind": "TextInput",
+                "label": "Number of Grid Points",
+                "value": "100",
+                "count": null,
+                "optional": false,
+                "disabled": false,
+                "max_chars": null,
+                "placeholder": null,
+                "multiline": false,
+                "metadata": false,
+                "depends_on": [],
+                "dependencies": []
+            }
+        }
+    }
+]
