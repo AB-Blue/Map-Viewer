@@ -3,6 +3,9 @@
 # Map visualization in 2D and 3D view
 ## This application is available on the OneCode platform
 
+
+![image](https://github.com/user-attachments/assets/c067f1a9-838c-4e03-ade9-a790a6808178)
+
 Please follow the instructions of provided link to create your Onecode account.
 https://github.com/deeplime-io/onecode
 
@@ -50,5 +53,3 @@ Author: Amir Abbas Babasafari (AB)
 Date: April 2025
 
 Email: a.babasafari@yahoo.com
-
-![image](https://github.com/user-attachments/assets/c067f1a9-838c-4e03-ade9-a790a6808178)
