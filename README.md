@@ -6,14 +6,24 @@
 
 ![image](https://github.com/user-attachments/assets/c067f1a9-838c-4e03-ade9-a790a6808178)
 
-Please follow the instructions of provided link to create your Onecode account.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## Access:
+
+### 1) Please follow the instructions of provided link to create your Onecode account.
 https://github.com/deeplime-io/onecode
 
-Share your email address to access the Map Application.
+### 2) Share your email address to access the Map Application.
 Send an email with title "Mapping Application" to a.babasafari@yahoo.com
 
-The Map Application interface can be accessed via the link below.
+### 3) The Map Viewer Application interface can be accessed via the link below.
 https://www.onecode.rocks/apps
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="663" alt="image" src="https://github.com/user-attachments/assets/ca5602f5-c13a-4e6c-8947-1ad2734ca2a3" />
+
+## Steps:
 
 Select either 2D or 3D display mode.
 
