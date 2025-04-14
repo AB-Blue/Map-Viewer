@@ -1,7 +1,8 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 # Map visualization in 2D and 3D view
-## This application is available on the OneCode platform
+
+This application is available on the OneCode platform
 
 Please follow the instructions of provided link to create your Onecode account.
 https://github.com/deeplime-io/onecode
