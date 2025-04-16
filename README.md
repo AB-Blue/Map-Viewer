@@ -44,7 +44,11 @@ Once the run status shows “success,” scroll down and click the output name.
 In 2D mode, select the PNG file; in 3D mode, select the HTML file to view and download your map.
 
 Visit LinkedIn and YouTube pages using the provided links for more details.
-TBD
+
+https://www.linkedin.com/feed/update/urn:li:activity:7318191677263761408/
+
+https://www.youtube.com/watch?v=lqcPMfAAiG0
+
 Thank you
 
 --------------------------------------------------------------------------------------------------------------------------------------
