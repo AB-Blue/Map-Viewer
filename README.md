@@ -11,7 +11,7 @@
 ## Access:
 
 ### 1) Please follow the instructions of provided link to create your OneCode account.
-https://github.com/deeplime-io/onecode
+https://www.onecode.rocks/
 
 ### 2) Share your email address to access the Map Application.
 Send an email with title "Mapping Application" to a.babasafari@yahoo.com
